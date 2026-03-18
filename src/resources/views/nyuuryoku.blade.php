@@ -101,10 +101,37 @@
         </div>
         <div class="form__group">
           <div class="form__group-title">
+            <span class="form__label--item">建物</span>
+            <span class="form__label--required">※</span>
+            <span class="form__input--text">
+              <input type="text" name="name" placeholder="例：千駄ヶ谷マンション101" />
+            </span>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="form__group">
+          <div class="form__group-title">
             <span class="form__label--item">お問い合わせの種類</span>
             <span class="form__label--required">※</span>
             <span class="form__input--text">
-              <input type="text" name="name" placeholder="例：選択してください" />
+            <select name="category" id="category">
+            <option value="">選択してください</option>
+        
+            <option value="意見" {{ old('category') == '意見' ? 'selected' : '' }}>
+            ご意見
+            </option>
+        
+            <option value="質問" {{ old('category') == '質問' ? 'selected' : '' }}>
+            ご質問
+            </option>
+        
+            <option value="その他" {{ old('category') == 'その他' ? 'selected' : '' }}>
+            その他
+            </option>
+          </select>
             </span>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
