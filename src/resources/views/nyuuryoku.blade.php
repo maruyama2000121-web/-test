@@ -147,7 +147,7 @@
           </span>
         </div>
         <div class="form__button">
-          <button class="form__button-submit" type="submit">送信</button>
+          <button class="form__button-submit" type="submit">確認画面</button>
         </div>
       </form>
     </div>
