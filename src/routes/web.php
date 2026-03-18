@@ -14,3 +14,4 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/', [ContactController::class, 'nyuuryoku']);
+Route::post('/kakuninn', [ContactController::class, 'kakuninn'])->name('contact.kakuninn');
